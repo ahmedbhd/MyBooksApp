@@ -17,6 +17,7 @@
 		78A21F152BEE1249000D2B2E /* RatingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A21F142BEE1249000D2B2E /* RatingsView.swift */; };
 		78A21F172BEE2143000D2B2E /* BookSamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A21F162BEE2143000D2B2E /* BookSamples.swift */; };
 		78A21F192BEE2239000D2B2E /* PreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A21F182BEE2239000D2B2E /* PreviewContainer.swift */; };
+		78A21F1B2BEE2C51000D2B2E /* BookList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A21F1A2BEE2C51000D2B2E /* BookList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		78A21F142BEE1249000D2B2E /* RatingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsView.swift; sourceTree = "<group>"; };
 		78A21F162BEE2143000D2B2E /* BookSamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSamples.swift; sourceTree = "<group>"; };
 		78A21F182BEE2239000D2B2E /* PreviewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewContainer.swift; sourceTree = "<group>"; };
+		78A21F1A2BEE2C51000D2B2E /* BookList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			children = (
 				78142CB52BED1AA500699105 /* MyBooksApp.swift */,
 				78142CB72BED1AA500699105 /* BookListView.swift */,
+				78A21F1A2BEE2C51000D2B2E /* BookList.swift */,
 				78142CC72BED281600699105 /* EditBookView.swift */,
 				78A21F142BEE1249000D2B2E /* RatingsView.swift */,
 				78142CC52BED1D4100699105 /* NewBookView.swift */,
@@ -158,6 +161,7 @@
 				78A21F172BEE2143000D2B2E /* BookSamples.swift in Sources */,
 				78142CC62BED1D4100699105 /* NewBookView.swift in Sources */,
 				78A21F152BEE1249000D2B2E /* RatingsView.swift in Sources */,
+				78A21F1B2BEE2C51000D2B2E /* BookList.swift in Sources */,
 				78142CC82BED281600699105 /* EditBookView.swift in Sources */,
 				78142CB82BED1AA500699105 /* BookListView.swift in Sources */,
 				78142CB62BED1AA500699105 /* MyBooksApp.swift in Sources */,
