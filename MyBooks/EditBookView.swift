@@ -85,7 +85,7 @@ struct EditBookView: View {
             }
             
             LabeledContent {
-                TextField("", text: $title)
+                TextField("", text: $title) 
             } label: {
                 Text("Title").foregroundStyle(.secondary)
             }
@@ -118,6 +118,17 @@ struct EditBookView: View {
                         lineWidth: 2
                     )
                 )
+            
+            NavigationLink {
+                QuoteListView(book: book)
+            } label: {
+                let count = book.quotes?.count ?? 0
+                //      Plural localizable
+                Label("^[\(count) Quotes](inflect: true)", systemImage: "quote.opening")
+            }
+            .buttonStyle(.bordered)
+            .frame(maxWidth: .infinity, alignment: .trailing)
+            .padding(.horizontal)
         }
         .padding()
         .textFieldStyle(.roundedBorder)

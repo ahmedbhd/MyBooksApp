@@ -18,6 +18,8 @@
 		78A21F172BEE2143000D2B2E /* BookSamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A21F162BEE2143000D2B2E /* BookSamples.swift */; };
 		78A21F192BEE2239000D2B2E /* PreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A21F182BEE2239000D2B2E /* PreviewContainer.swift */; };
 		78A21F1B2BEE2C51000D2B2E /* BookList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A21F1A2BEE2C51000D2B2E /* BookList.swift */; };
+		78A21F1D2BEE6140000D2B2E /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A21F1C2BEE6140000D2B2E /* Quote.swift */; };
+		78A21F1F2BEE6246000D2B2E /* QuoteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A21F1E2BEE6246000D2B2E /* QuoteListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		78A21F162BEE2143000D2B2E /* BookSamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSamples.swift; sourceTree = "<group>"; };
 		78A21F182BEE2239000D2B2E /* PreviewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewContainer.swift; sourceTree = "<group>"; };
 		78A21F1A2BEE2C51000D2B2E /* BookList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookList.swift; sourceTree = "<group>"; };
+		78A21F1C2BEE6140000D2B2E /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		78A21F1E2BEE6246000D2B2E /* QuoteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				78142CB52BED1AA500699105 /* MyBooksApp.swift */,
+				78A21F1E2BEE6246000D2B2E /* QuoteListView.swift */,
 				78142CB72BED1AA500699105 /* BookListView.swift */,
 				78A21F1A2BEE2C51000D2B2E /* BookList.swift */,
 				78142CC72BED281600699105 /* EditBookView.swift */,
@@ -83,6 +88,7 @@
 			children = (
 				78142CBC2BED1AA700699105 /* Preview Assets.xcassets */,
 				78A21F162BEE2143000D2B2E /* BookSamples.swift */,
+				78A21F1C2BEE6140000D2B2E /* Quote.swift */,
 				78A21F182BEE2239000D2B2E /* PreviewContainer.swift */,
 			);
 			path = "Preview Content";
@@ -166,6 +172,8 @@
 				78142CB82BED1AA500699105 /* BookListView.swift in Sources */,
 				78142CB62BED1AA500699105 /* MyBooksApp.swift in Sources */,
 				78A21F192BEE2239000D2B2E /* PreviewContainer.swift in Sources */,
+				78A21F1F2BEE6246000D2B2E /* QuoteListView.swift in Sources */,
+				78A21F1D2BEE6140000D2B2E /* Quote.swift in Sources */,
 				78142CC42BED1AFB00699105 /* Book.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

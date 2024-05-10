@@ -22,6 +22,8 @@ class Book {
 //    var recommendedBy: String? // LightWeight Migration
 //    var recommendedBy: String // HeavyWeight Migration -> Crash
     var recommendedBy: String = "" // LightWeight Migration
+    @Relationship(deleteRule: .cascade)
+    var quotes: [Quote]? // Could be empty array || CloudKit requires it to be nil
     
     init(
         title: String,

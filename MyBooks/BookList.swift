@@ -80,6 +80,6 @@ struct BookList: View {
     preview.addExamples(Book.sampleBooks)
     return NavigationStack {
         BookList(sortOrder: .status, filterString: "")
+            .modelContainer(preview.container)
     }
-    .modelContainer(preview.container)
 }
