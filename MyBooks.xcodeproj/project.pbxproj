@@ -77,6 +77,7 @@
 				78A21F142BEE1249000D2B2E /* RatingsView.swift */,
 				78142CC52BED1D4100699105 /* NewBookView.swift */,
 				78142CC32BED1AFB00699105 /* Book.swift */,
+				78A21F1C2BEE6140000D2B2E /* Quote.swift */,
 				78142CB92BED1AA700699105 /* Assets.xcassets */,
 				78142CBB2BED1AA700699105 /* Preview Content */,
 			);
@@ -88,7 +89,6 @@
 			children = (
 				78142CBC2BED1AA700699105 /* Preview Assets.xcassets */,
 				78A21F162BEE2143000D2B2E /* BookSamples.swift */,
-				78A21F1C2BEE6140000D2B2E /* Quote.swift */,
 				78A21F182BEE2239000D2B2E /* PreviewContainer.swift */,
 			);
 			path = "Preview Content";
