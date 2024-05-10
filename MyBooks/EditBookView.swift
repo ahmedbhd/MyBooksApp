@@ -19,6 +19,7 @@ struct EditBookView: View {
     @State private var dateStarted = Date.distantPast
     @State private var dateCompleted = Date.distantPast
     @State private var firstView = true
+    @State private var recommendedBy = ""
     
     var body: some View {
         HStack {
@@ -95,9 +96,15 @@ struct EditBookView: View {
                 Text("Author").foregroundStyle(.secondary)
             }
             
+            LabeledContent {
+                TextField("", text: $recommendedBy)
+            } label: {
+                Text("Recommended by").foregroundStyle(.secondary)
+            }
+            
             Divider()
             
-            Text("Summary").foregroundStyle(.secondary)
+            Text("synopsis").foregroundStyle(.secondary)
             TextEditor(text: $summary)
                 .padding(5)
                 .overlay(
@@ -123,10 +130,11 @@ struct EditBookView: View {
                     book.rating = rating
                     book.title = title
                     book.author = author
-                    book.summary = summary
+                    book.synopsis = summary
                     book.dateAdded = dateAdded
                     book.dateStarted = dateStarted
                     book.dateCompleted = dateCompleted
+                    book.recommendedBy = recommendedBy
                     dismiss()
                 }
                 .buttonStyle(.borderedProminent)
@@ -137,10 +145,11 @@ struct EditBookView: View {
             rating = book.rating
             title = book.title
             author = book.author
-            summary = book.summary
+            summary = book.synopsis
             dateAdded = book.dateAdded
             dateStarted = book.dateStarted
             dateCompleted = book.dateCompleted
+            recommendedBy = book.recommendedBy
         }
     }
     
@@ -149,10 +158,11 @@ struct EditBookView: View {
         || rating != book.rating
         || title != book.title
         || author != book.author
-        || summary != book.summary
+        || summary != book.synopsis
         || dateAdded != book.dateAdded
         || dateStarted != book.dateStarted
         || dateCompleted != book.dateCompleted
+        || recommendedBy != book.recommendedBy
     }
 }
 

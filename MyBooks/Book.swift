@@ -10,34 +10,40 @@ import SwiftData
 
 @Model
 class Book {
+    var title: String
+    var author: String
+    var dateAdded: Date
+    var dateStarted: Date
+    var dateCompleted: Date
+    @Attribute(originalName: "summary") // LightWeight Migration
+    var synopsis: String
+    var rating: Int?
+    var status: Status.RawValue
+//    var recommendedBy: String? // LightWeight Migration
+//    var recommendedBy: String // HeavyWeight Migration -> Crash
+    var recommendedBy: String = "" // LightWeight Migration
+    
     init(
         title: String,
         author: String,
         dateAdded: Date = Date.now,
         dateStarted: Date = Date.distantPast,
         dateCompleted: Date = Date.distantPast,
-        summary: String = "",
+        synopsis: String = "",
         rating: Int? = nil,
-        status: Status = .onShelf
+        status: Status = .onShelf,
+        recommendedBy: String = ""
     ) {
         self.title = title
         self.author = author
         self.dateAdded = dateAdded
         self.dateStarted = dateStarted
         self.dateCompleted = dateCompleted
-        self.summary = summary
+        self.synopsis = synopsis
         self.rating = rating
         self.status = status.rawValue
+        self.recommendedBy = recommendedBy
     }
-    
-    var title: String
-    var author: String
-    var dateAdded: Date
-    var dateStarted: Date
-    var dateCompleted: Date
-    var summary: String
-    var rating: Int?
-    var status: Status.RawValue
     
     var icon: Image {
         switch Status(rawValue: status)! {
