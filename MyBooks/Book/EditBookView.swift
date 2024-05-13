@@ -140,7 +140,7 @@ struct EditBookView: View {
                 } label: {
                     let count = book.quotes?.count ?? 0
                     //      Plural localizable
-                    Label("^[\(count) Quotes](inflect: true)", systemImage: "quote.opening")
+                    Label("\(count) Quotes", systemImage: "quote.opening")
                 }
             }
             .buttonStyle(.bordered)
@@ -195,8 +195,12 @@ struct EditBookView: View {
 }
 
 #Preview {
-    NavigationStack {
-        EditBookView(book: Book.sampleBooks[4])
-            .modelContainer(Preview(Book.self).container)
+    let preview = Preview(Book.self)
+    let books = Book.sampleBooks
+    preview.addExamples(books)
+    
+    return NavigationStack {
+        EditBookView(book: books[4])
+            .modelContainer(preview.container)
     }
 }

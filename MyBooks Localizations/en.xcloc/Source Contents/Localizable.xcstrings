@@ -1,0 +1,145 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    "%lld Quotes" : {
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Quote"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Quotes"
+                }
+              },
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "new",
+                  "value" : "No Quotes"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "author" : {
+
+    },
+    "Author" : {
+
+    },
+    "Back" : {
+
+    },
+    "Book title" : {
+
+    },
+    "Cancel" : {
+
+    },
+    "Completed" : {
+
+    },
+    "Create" : {
+
+    },
+    "Create Genre" : {
+
+    },
+    "Create new Genre" : {
+
+    },
+    "Date Added" : {
+
+    },
+    "Date Completed" : {
+
+    },
+    "Date Started" : {
+
+    },
+    "Enter your first book." : {
+
+    },
+    "Filter on title or author" : {
+
+    },
+    "Genre" : {
+
+    },
+    "In Progress" : {
+
+    },
+    "My Books" : {
+
+    },
+    "name" : {
+
+    },
+    "New Book" : {
+
+    },
+    "New Genre" : {
+
+    },
+    "On Shelf" : {
+
+    },
+    "Page" : {
+
+    },
+    "page #" : {
+
+    },
+    "Page: %@" : {
+
+    },
+    "Quotes" : {
+
+    },
+    "Rating" : {
+
+    },
+    "Recommended by" : {
+
+    },
+    "Set the genre color" : {
+
+    },
+    "Sort by %@" : {
+
+    },
+    "status" : {
+
+    },
+    "Status" : {
+
+    },
+    "synopsis" : {
+
+    },
+    "title" : {
+
+    },
+    "Title" : {
+
+    },
+    "Update" : {
+
+    },
+    "You need to create some genres first." : {
+
+    }
+  },
+  "version" : "1.0"
+}
