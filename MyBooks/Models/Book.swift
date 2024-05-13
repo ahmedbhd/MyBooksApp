@@ -24,6 +24,8 @@ class Book {
     var recommendedBy: String = "" // LightWeight Migration
     @Relationship(deleteRule: .cascade)
     var quotes: [Quote]? // Could be empty array || CloudKit requires it to be nil
+    @Relationship(inverse: \Genre.books)
+    var genres: [Genre]?
     
     init(
         title: String,

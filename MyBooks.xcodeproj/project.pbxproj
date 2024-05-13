@@ -14,6 +14,13 @@
 		78142CC42BED1AFB00699105 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78142CC32BED1AFB00699105 /* Book.swift */; };
 		78142CC62BED1D4100699105 /* NewBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78142CC52BED1D4100699105 /* NewBookView.swift */; };
 		78142CC82BED281600699105 /* EditBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78142CC72BED281600699105 /* EditBookView.swift */; };
+		785BB7EA2BF2166900BB77FE /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785BB7E92BF2166900BB77FE /* Genre.swift */; };
+		785BB7EC2BF216E500BB77FE /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785BB7EB2BF216E500BB77FE /* UIColor+Extension.swift */; };
+		785BB7EE2BF2170C00BB77FE /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785BB7ED2BF2170C00BB77FE /* Color+Extension.swift */; };
+		785BB7F22BF217D100BB77FE /* GenreSamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785BB7F12BF217D100BB77FE /* GenreSamples.swift */; };
+		785BB7F82BF2192800BB77FE /* GenresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785BB7F72BF2192800BB77FE /* GenresView.swift */; };
+		785BB7FA2BF21D5200BB77FE /* NewGenreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785BB7F92BF21D5200BB77FE /* NewGenreView.swift */; };
+		785BB7FC2BF2201400BB77FE /* GenresStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785BB7FB2BF2201400BB77FE /* GenresStackView.swift */; };
 		78A21F152BEE1249000D2B2E /* RatingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A21F142BEE1249000D2B2E /* RatingsView.swift */; };
 		78A21F172BEE2143000D2B2E /* BookSamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A21F162BEE2143000D2B2E /* BookSamples.swift */; };
 		78A21F192BEE2239000D2B2E /* PreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A21F182BEE2239000D2B2E /* PreviewContainer.swift */; };
@@ -31,6 +38,13 @@
 		78142CC32BED1AFB00699105 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		78142CC52BED1D4100699105 /* NewBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBookView.swift; sourceTree = "<group>"; };
 		78142CC72BED281600699105 /* EditBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditBookView.swift; sourceTree = "<group>"; };
+		785BB7E92BF2166900BB77FE /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		785BB7EB2BF216E500BB77FE /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		785BB7ED2BF2170C00BB77FE /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		785BB7F12BF217D100BB77FE /* GenreSamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreSamples.swift; sourceTree = "<group>"; };
+		785BB7F72BF2192800BB77FE /* GenresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresView.swift; sourceTree = "<group>"; };
+		785BB7F92BF21D5200BB77FE /* NewGenreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGenreView.swift; sourceTree = "<group>"; };
+		785BB7FB2BF2201400BB77FE /* GenresStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresStackView.swift; sourceTree = "<group>"; };
 		78A21F142BEE1249000D2B2E /* RatingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsView.swift; sourceTree = "<group>"; };
 		78A21F162BEE2143000D2B2E /* BookSamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSamples.swift; sourceTree = "<group>"; };
 		78A21F182BEE2239000D2B2E /* PreviewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewContainer.swift; sourceTree = "<group>"; };
@@ -70,14 +84,12 @@
 			isa = PBXGroup;
 			children = (
 				78142CB52BED1AA500699105 /* MyBooksApp.swift */,
-				78A21F1E2BEE6246000D2B2E /* QuoteListView.swift */,
-				78142CB72BED1AA500699105 /* BookListView.swift */,
-				78A21F1A2BEE2C51000D2B2E /* BookList.swift */,
-				78142CC72BED281600699105 /* EditBookView.swift */,
-				78A21F142BEE1249000D2B2E /* RatingsView.swift */,
-				78142CC52BED1D4100699105 /* NewBookView.swift */,
-				78142CC32BED1AFB00699105 /* Book.swift */,
-				78A21F1C2BEE6140000D2B2E /* Quote.swift */,
+				785BB7F62BF2191500BB77FE /* Genres */,
+				785BB7F42BF218C700BB77FE /* Quotes */,
+				785BB7F32BF2189B00BB77FE /* Book */,
+				785BB7F52BF218D900BB77FE /* Accessory View */,
+				785BB7F02BF217A500BB77FE /* Extensions */,
+				785BB7EF2BF2179600BB77FE /* Models */,
 				78142CB92BED1AA700699105 /* Assets.xcassets */,
 				78142CBB2BED1AA700699105 /* Preview Content */,
 			);
@@ -90,8 +102,65 @@
 				78142CBC2BED1AA700699105 /* Preview Assets.xcassets */,
 				78A21F162BEE2143000D2B2E /* BookSamples.swift */,
 				78A21F182BEE2239000D2B2E /* PreviewContainer.swift */,
+				785BB7F12BF217D100BB77FE /* GenreSamples.swift */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		785BB7EF2BF2179600BB77FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				785BB7E92BF2166900BB77FE /* Genre.swift */,
+				78142CC32BED1AFB00699105 /* Book.swift */,
+				78A21F1C2BEE6140000D2B2E /* Quote.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		785BB7F02BF217A500BB77FE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				785BB7EB2BF216E500BB77FE /* UIColor+Extension.swift */,
+				785BB7ED2BF2170C00BB77FE /* Color+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		785BB7F32BF2189B00BB77FE /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				78142CB72BED1AA500699105 /* BookListView.swift */,
+				78A21F1A2BEE2C51000D2B2E /* BookList.swift */,
+				78142CC72BED281600699105 /* EditBookView.swift */,
+				78142CC52BED1D4100699105 /* NewBookView.swift */,
+			);
+			path = Book;
+			sourceTree = "<group>";
+		};
+		785BB7F42BF218C700BB77FE /* Quotes */ = {
+			isa = PBXGroup;
+			children = (
+				78A21F1E2BEE6246000D2B2E /* QuoteListView.swift */,
+			);
+			path = Quotes;
+			sourceTree = "<group>";
+		};
+		785BB7F52BF218D900BB77FE /* Accessory View */ = {
+			isa = PBXGroup;
+			children = (
+				78A21F142BEE1249000D2B2E /* RatingsView.swift */,
+			);
+			path = "Accessory View";
+			sourceTree = "<group>";
+		};
+		785BB7F62BF2191500BB77FE /* Genres */ = {
+			isa = PBXGroup;
+			children = (
+				785BB7F72BF2192800BB77FE /* GenresView.swift */,
+				785BB7F92BF21D5200BB77FE /* NewGenreView.swift */,
+				785BB7FB2BF2201400BB77FE /* GenresStackView.swift */,
+			);
+			path = Genres;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,14 +234,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				78A21F172BEE2143000D2B2E /* BookSamples.swift in Sources */,
+				785BB7EE2BF2170C00BB77FE /* Color+Extension.swift in Sources */,
 				78142CC62BED1D4100699105 /* NewBookView.swift in Sources */,
+				785BB7FA2BF21D5200BB77FE /* NewGenreView.swift in Sources */,
 				78A21F152BEE1249000D2B2E /* RatingsView.swift in Sources */,
+				785BB7EA2BF2166900BB77FE /* Genre.swift in Sources */,
 				78A21F1B2BEE2C51000D2B2E /* BookList.swift in Sources */,
+				785BB7FC2BF2201400BB77FE /* GenresStackView.swift in Sources */,
 				78142CC82BED281600699105 /* EditBookView.swift in Sources */,
 				78142CB82BED1AA500699105 /* BookListView.swift in Sources */,
 				78142CB62BED1AA500699105 /* MyBooksApp.swift in Sources */,
 				78A21F192BEE2239000D2B2E /* PreviewContainer.swift in Sources */,
+				785BB7F82BF2192800BB77FE /* GenresView.swift in Sources */,
+				785BB7F22BF217D100BB77FE /* GenreSamples.swift in Sources */,
 				78A21F1F2BEE6246000D2B2E /* QuoteListView.swift in Sources */,
+				785BB7EC2BF216E500BB77FE /* UIColor+Extension.swift in Sources */,
 				78A21F1D2BEE6140000D2B2E /* Quote.swift in Sources */,
 				78142CC42BED1AFB00699105 /* Book.swift in Sources */,
 			);

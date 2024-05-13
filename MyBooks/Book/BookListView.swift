@@ -25,26 +25,30 @@ struct BookListView: View {
             
             BookList(sortOrder: sortOrder, filterString: filter)
                 .searchable(text: $filter, prompt: "Filter on title or author")
-            .navigationTitle("My Books")
-            .toolbar {
-                Button {
-                    createNewBook = true
-                } label: {
-                    Image(systemName: "plus.circle.fill")
-                        .imageScale(.large)
+                .navigationTitle("My Books")
+                .toolbar {
+                    Button {
+                        createNewBook = true
+                    } label: {
+                        Image(systemName: "plus.circle.fill")
+                            .imageScale(.large)
+                    }
                 }
-            }
-            .sheet(isPresented: $createNewBook) {
-                NewBookView()
-                    .presentationDetents([.medium])
-            }
+                .sheet(isPresented: $createNewBook) {
+                    NewBookView()
+                        .presentationDetents([.medium])
+                }
         }
     }
 }
 
 #Preview {
     let preview = Preview(Book.self)
-    preview.addExamples(Book.sampleBooks)
+    let books = Book.sampleBooks
+    let genres = Genre.sampleGenres
+    
+    preview.addExamples(books)
+    preview.addExamples(genres)
     return BookListView()
         .modelContainer(preview.container)
 }
