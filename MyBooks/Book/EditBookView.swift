@@ -10,7 +10,7 @@ import SwiftUI
 struct EditBookView: View {
     @Environment(\.dismiss) private var dismiss
     let book: Book
-    @State private var status = Status.onShelf
+    @State private var status: Status
     @State private var rating: Int?
     @State private var title = ""
     @State private var author = ""
@@ -18,9 +18,13 @@ struct EditBookView: View {
     @State private var dateAdded = Date.distantPast
     @State private var dateStarted = Date.distantPast
     @State private var dateCompleted = Date.distantPast
-    @State private var firstView = true
     @State private var recommendedBy = ""
     @State private var showGenre = false
+    
+    init(book: Book) {
+        self.book = book
+        _status = State(initialValue: Status(rawValue: book.status)!)
+    }
     
     var body: some View {
         HStack {
@@ -36,7 +40,13 @@ struct EditBookView: View {
         VStack(alignment: .leading) {
             GroupBox {
                 LabeledContent {
-                    DatePicker("", selection: $dateAdded, displayedComponents: .date)
+                    switch status {
+                    case .onShelf:
+                        DatePicker("", selection: $dateAdded, displayedComponents: .date)
+                    case .inProgress, .completed:
+                        DatePicker("", selection: $dateAdded, in: ...dateStarted,
+                                   displayedComponents: .date)
+                    }
                 } label: {
                     Text("Date Added")
                 }
@@ -59,22 +69,19 @@ struct EditBookView: View {
             }
             .foregroundStyle(.secondary)
             .onChange(of: status) { oldValue, newValue in
-                if !firstView {
-                    if newValue == .onShelf {
-                        dateStarted = Date.distantPast
-                        dateCompleted = Date.distantPast
-                    } else if newValue == .inProgress && oldValue == .completed {
-                        dateCompleted = Date.distantPast
-                    } else if newValue == .inProgress && oldValue == .onShelf {
-                        dateStarted = Date.now
-                    } else if newValue == .completed && oldValue == .onShelf {
-                        dateCompleted = Date.now
-                        dateStarted = dateAdded
-                    } else {
-                        dateCompleted = Date.now
-                    }
+                if newValue == .onShelf {
+                    dateStarted = Date.distantPast
+                    dateCompleted = Date.distantPast
+                } else if newValue == .inProgress && oldValue == .completed {
+                    dateCompleted = Date.distantPast
+                } else if newValue == .inProgress && oldValue == .onShelf {
+                    dateStarted = Date.now
+                } else if newValue == .completed && oldValue == .onShelf {
+                    dateCompleted = Date.now
+                    dateStarted = dateAdded
+                } else {
+                    dateCompleted = Date.now
                 }
-                firstView = false
             }
             
             Divider()
@@ -169,7 +176,6 @@ struct EditBookView: View {
             }
         }
         .onAppear {
-            status = Status(rawValue: book.status)!
             rating = book.rating
             title = book.title
             author = book.author

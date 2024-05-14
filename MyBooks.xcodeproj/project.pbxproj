@@ -100,6 +100,7 @@
 				785BB7F02BF217A500BB77FE /* Extensions */,
 				785BB7EF2BF2179600BB77FE /* Models */,
 				78142CB92BED1AA700699105 /* Assets.xcassets */,
+				78BE15312BF37337008139E3 /* Preview */,
 				78142CBB2BED1AA700699105 /* Preview Content */,
 			);
 			path = MyBooks;
@@ -109,9 +110,6 @@
 			isa = PBXGroup;
 			children = (
 				78142CBC2BED1AA700699105 /* Preview Assets.xcassets */,
-				78A21F162BEE2143000D2B2E /* BookSamples.swift */,
-				78A21F182BEE2239000D2B2E /* PreviewContainer.swift */,
-				785BB7F12BF217D100BB77FE /* GenreSamples.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -170,6 +168,16 @@
 				785BB7FB2BF2201400BB77FE /* GenresStackView.swift */,
 			);
 			path = Genres;
+			sourceTree = "<group>";
+		};
+		78BE15312BF37337008139E3 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				78A21F162BEE2143000D2B2E /* BookSamples.swift */,
+				78A21F182BEE2239000D2B2E /* PreviewContainer.swift */,
+				785BB7F12BF217D100BB77FE /* GenreSamples.swift */,
+			);
+			path = Preview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
